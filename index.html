@@ -7,7 +7,17 @@
     <title>weather-app</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="search">
+        <input type="text" placeholder="Say your Location!" id="search-input" required>
+        <button type="button">🔍</button>
+      </div>
+      <div class="weather-result">
+        <div class="city-name"></div>
+        <img class="situation" src="" alt="">
+        <div class="temp"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
