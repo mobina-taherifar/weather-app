@@ -3,7 +3,7 @@ const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 export async function getWeather(city){
     try{
-        let response = await fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}`)
+        let response = await fetch(`${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`)
         let data = await response.json();
         return data;
     } catch(error){

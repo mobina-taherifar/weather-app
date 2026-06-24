@@ -9,13 +9,45 @@
   <body>
     <div id="app">
       <div class="search">
-        <input type="text" placeholder="Say your Location!" id="search-input" required>
+        <input type="text" placeholder="Where are you Mushy?" id="search-input" required>
         <button type="button">🔍</button>
       </div>
-      <div class="weather-result">
-        <div class="city-name"></div>
-        <img class="situation" src="" alt="">
-        <div class="temp"></div>
+      <div class="scenario">
+        <div class="character">
+          <img src="" alt="" class="character">
+        </div>
+        <div class="weather-card">
+          <div class="card-header">
+            <div class="condition">
+              <div class="header">
+                <h2>rainy or sunny</h2>
+                <img src="" alt="" class="condition-icon">
+              </div>
+              <h1>temperature</h1>
+              <h3>city, country name</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="properties">
+            <div class="feels-like">
+              <img src="/images.feels-like-thermometer.svg" alt="" class="property-icon">
+              <span>Feels like</span>
+              <span id="feels-like"></span>
+            </div>
+
+            <div class="humidity">
+              <img src="/images.humidity-drop.svg" alt="" class="property-icon">
+              <span>Humidity</span>
+              <span id="humidity"></span>
+            </div>
+
+            <div class="wind">
+              <img src="/images.wind.svg" alt="" class="property-icon">
+              <span>Wind</span>
+              <span id="wind"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
