@@ -5,50 +5,53 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather-app</title>
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
     <div id="app">
-      <div class="search">
-        <input type="text" placeholder="Where are you Mushy?" id="search-input" required>
-        <button type="button"></button>
-        <link rel="stylesheet" href="/style.css">
-      </div>
       <div class="scenario theme-default">
+
         <div class="character">
           <img src="/images/default.png" alt="" class="character-img">
         </div>
-        <div class="weather-card">
-          <div class="card-header">
-            <div class="condition">
-              <div class="header">
-                <h2>rainy or sunny</h2>
-                <img src="" alt="" class="condition-icon">
-              </div>
-              <h1>temperature</h1>
-              <h3>city, country name</h3>
-              <hr>
-            </div>
+
+        <div class="right-panel">
+          <div class="search">
+            <input type="text" placeholder="Where are you Mushy?" id="search-input" required>
+            <button type="button"></button>
           </div>
-          <div class="properties">
-            <div class="property">
-              <img src="/images/feels-like-thermometer.svg" alt="" class="property-icon">
-              <span>Feels like</span>
-              <span id="feels-like"></span>
+          <div class="weather-card">
+            <div class="card-header">
+              <div class="condition">
+                <div class="header">
+                  <h2>Rainy</h2>
+                  <img src="" alt="" class="condition-icon">
+                </div>
+                <h1>14<span>°C</span></h1>
+                <h3>city, country name</h3>
+                <hr>
+              </div>
             </div>
-
-            <div class="property">
-              <img src="/images/humidity-drop.svg" alt="" class="property-icon">
-              <span>Humidity</span>
-              <span id="humidity"></span>
-            </div>
-
-            <div class="property">
-              <img src="/images/wind.svg" alt="" class="property-icon">
-              <span>Wind</span>
-              <span id="wind"></span>
+            <div class="properties">
+              <div class="property">
+                <img src="/images/feels-like-thermometer.svg" alt="" class="property-icon">
+                <span>Feels like</span>
+                <span id="feels-like"></span>
+              </div>
+              <div class="property">
+                <img src="/images/humidity-drop.svg" alt="" class="property-icon">
+                <span>Humidity</span>
+                <span id="humidity"></span>
+              </div>
+              <div class="property">
+                <img src="/images/wind.svg" alt="" class="property-icon">
+                <span>Wind</span>
+                <span id="wind"></span>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>
